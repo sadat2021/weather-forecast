@@ -1,0 +1,85 @@
+.search-form {
+    width: 80%;
+    height: 60px;
+    background-color: #1e202b;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-form-input {
+    flex: 1;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.search-form-btn {
+    width: 100px;
+    background-color: #009ad8;
+    border-radius: 30px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition-delay: 200ms;
+    opacity: 1;
+}
+
+.search-form-btn:hover {
+    opacity: .8;
+    transition-delay: 200ms;
+}
+
+.search-form-modal {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000059;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form-modal-body {
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 88%;
+}
+
+.search-form-cities-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.search-form-cities-table>thead>tr,
+.search-form-cities-table>tbody>tr {
+    height: 40px;
+    border-bottom: 1px solid #ededed;
+}
+
+.search-form-cities-table>tbody>tr {
+    cursor: pointer;
+}
+
+.search-form-cities-table>tbody>tr:hover {
+    background-color: #009ad8;
+    color: white;
+}
+
+.search-form-cities-table>thead>tr>th,
+.search-form-cities-table>tbody>tr>td {
+    text-align: left;
+    padding-left: 10px;
+}

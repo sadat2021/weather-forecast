@@ -1,0 +1,143 @@
+.forecast-card {
+    background-color: #323544;
+    border-radius: 10px;
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.forecast-card-today {
+    width: 500px;
+}
+
+.forecast-card-others {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast-card-others-odd {
+    background-color: #262936;
+}
+
+.forecast-card-header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.forecast-card-today-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.forecast-card-today-content-city {
+    color: #bfc1c8;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.forecast-card-today-content-temp {
+    color: white;
+    font-size: 90px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.forecast-card-today-content-temp>span {
+    margin-right: 30px;
+}
+
+.forecast-card-today-content-temp>i {
+    color: #009ad8;
+}
+
+.forecast-card-today-content-others {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.forecast-card-today-content-others>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    color: white;
+}
+
+.forecast-card-today-content-others>div>span {
+    margin-left: 10px;
+    color: #bfc1c8;
+}
+
+.forecast-card-others-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #bfc1c8;
+}
+
+.forecast-card-others-content>span {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.forecast-card-others-content>i {
+    color: #009ad8;
+    font-size: 40px;
+}
+
+@media (max-width:1024px) {
+    .forecast-card {
+        width: 95%;
+    }
+
+    .forecast-card-today {
+        width: 300px;
+    }
+
+    .forecast-card-today-content-temp {
+        color: white;
+        font-size: 50px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:767px) {
+    .forecast-card {
+        height: auto;
+        flex-direction: column;
+        max-height: 70%;
+        overflow-y: scroll;
+    }
+
+    .forecast-card-today-content-temp {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .forecast-card-today {
+        width: 100%;
+    }
+}
